@@ -1,0 +1,61 @@
+body
+{
+    margin: 0px;
+}
+
+.w-100
+{
+    width: 100vw;
+}
+
+.h-100
+{
+    height: 100vh;
+}
+
+.navbar
+{
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    position: absolute;
+    background-color: rgb(255 255 255 / 0%);
+    color: white;
+    padding: 15px;
+}
+
+.navbar a
+{
+    margin: 0px 12px 0px 0px;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    border: white solid 1px;
+    inline-size: max-content;
+}
+
+.logo
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.logo img
+{
+    height: 20px;
+    width: 20%;
+}
+
+
+
+.paginas
+{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

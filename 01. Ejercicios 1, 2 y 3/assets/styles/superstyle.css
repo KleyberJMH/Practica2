@@ -1,0 +1,29 @@
+.page
+{
+  height: 100vh;
+  padding:8% 5% 5% 5%;
+}
+
+.heroimg
+{
+  display: flex;
+  align-items: center;
+}
+
+.hero
+{
+  display: grid;
+  align-content: center;
+}
+
+.centered
+{
+  align-items: center;
+  align-content: center;
+}
+
+.titulo
+{
+  display: flex;
+  justify-content: center;
+}
