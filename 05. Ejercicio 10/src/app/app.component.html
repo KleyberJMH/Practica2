@@ -1,0 +1,38 @@
+<h1>{{title}}</h1>
+<section *ngIf="!selectedPokemon" class="row">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Enlace</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pokemon of pokemons">
+        <td>{{pokemon.name | uppercase}}</td>
+        <td><button class="btn btn-primary" (click)="showPokemon(pokemon.url)">Detalle</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  
+
+<div class="row">
+  <button class="col col-6" (click)="getPrev()">&lt; Prev</button>
+  <button class="col col-6" (click)="getNext()">Next &gt;</button>
+</div>
+</section>
+
+<section class="row justify-content-center" *ngIf="selectedPokemon!=null">
+    <p class="h1 col-12">{{ selectedPokemon.name | uppercase}}</p>
+  <p class="h2 col-12">Tipo</p>
+  <p class="h4 col-12">{{selectedPokemon.types[0].type.name}}</p>
+  <p class="h4 col-12" *ngIf="selectedPokemon.types[1]!=undefined">{{selectedPokemon.types[1].type.name}}</p>
+  <img class="img-fluid col-4 offset" [src]="selectedPokemon.sprites.other['official-artwork'].front_default" alt="">
+  <button class="col-12" (click)="unselectPokemon()">Volver</button>
+  
+</section>
+
+
